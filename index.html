@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Restoran - Bootstrap Restaurant Template</title>
+    <title>Wokman</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -208,56 +208,135 @@ customers to bring out the chef in them.
             <h1 class="mb-5">Our Team</h1>
         </div>
         <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp team-margin-left" data-wow-delay="0.1s">
+            <style>
+                .rotate {
+
+                    transition: transform 2s;
+                    transform-style: preserve-3d;
+                    cursor: pointer;
+                }
+
+                .front,
+                .back {
+                    backface-visibility: hidden;
+                }
+
+                .back {
+                    margin-top: -15.375rem;
+                    margin-bottom: 7rem;
+
+                    transform: rotateY(180deg);
+                }
+            </style>
+            <script>
+                function flip1(event) {
+                    var element = event.currentTarget;
+                    if (element.className === "rotate") {
+                        if (element.style.transform == "rotateY(180deg)") {
+                            element.style.transform = "rotateY(0deg)";
+                        }
+                        else {
+                            element.style.transform = "rotateY(180deg)";
+                        }
+                    }
+                };
+                function flip2(event) {
+                    var element = event.currentTarget;
+                    if (element.className === "rotate") {
+                        if (element.style.transform == "rotateY(180deg)") {
+                            element.style.transform = "rotateY(0deg)";
+                        }
+                        else {
+                            element.style.transform = "rotateY(180deg)";
+                        }
+                    }
+                };
+                function flip3(event) {
+                    var element = event.currentTarget;
+                    if (element.className === "rotate") {
+                        if (element.style.transform == "rotateY(180deg)") {
+                            element.style.transform = "rotateY(0deg)";
+                        }
+                        else {
+                            element.style.transform = "rotateY(180deg)";
+                        }
+                    }
+                };
+            </script>
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp team-margin-left " data-wow-delay="0.1s">
+
                 <div class="team-item text-center rounded overflow-hidden">
-                    <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
-                    </div>
-                    <h5 class="mb-0">Full Name</h5>
-                    <small>Designation</small>
-                    <div class="d-flex justify-content-center mt-3">
-                        Hello there Abcd
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    <div class="rotate" onclick="flip1(event)">
+                        <div class="front">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+
+                        </div>
+                        <div class="back">
+                            <h1>This is the back</h1>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+
+
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp  " data-wow-delay="0.1s">
+
                 <div class="team-item text-center rounded overflow-hidden">
-                    <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                    </div>
-                    <h5 class="mb-0">Full Name</h5>
-                    <small>Designation</small>
-                    <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    <div class="rotate" onclick="flip2(event)">
+                        <div class="front">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+
+                        </div>
+                        <div class="back">
+                            <h1>This is the back</h1>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s">
+
                 <div class="team-item text-center rounded overflow-hidden">
-                    <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="">
-                    </div>
-                    <h5 class="mb-0">Full Name</h5>
-                    <small>Designation</small>
-                    <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    <div class="rotate" onclick="flip3(event)">
+                        <div class="front">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Full Name</h5>
+                            <small>Designation</small>
+
+                        </div>
+                        <div class="back">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos, vero debitis
+                                maiores animi blanditiis possimus provident sit illum mollitia, optio quis accusamus
+                                quibusdam assumenda veritatis odio totam, sequi impedit.</p>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
 
         </div>
     </div>
 </div>
 <!-- Team End -->
-
-
                 <!-- Menu Start -->
 <div class="container-xxl py-5">
     <div
@@ -1300,7 +1379,8 @@ customers to bring out the chef in them.
     </div>
     <!-- Team End -->
                                 <!-- Team Start -->
-<div class="container-xxl pt-5 pb-3">
+<div class="container-xxl pt-5 pb-3"
+    style="background: linear-gradient(rgba(15, 23, 43, .9),#ffffffe6), url(images/background_white.jpg); background-size: cover;">
 
     <div
         style="height: 120px; width: inherit; background-image: url('/images/red_brush.png'); background-size: calc(12.375rem + 12.5vw); background-position: center; background-repeat: no-repeat;">
@@ -1326,8 +1406,7 @@ customers to bring out the chef in them.
         </div>
     </div>
 </div>
-</div>
-</div>
+
 <!-- Menu End -->
 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
 
@@ -1589,7 +1668,11 @@ customers to bring out the chef in them.
         <div class="ball"></div>
         <div class="ball"></div>
     </div>
-    <script src="js/infinitescroll.js"></script>
+
+
+
+
+    <!-- <script src="js/infinitescroll.js"></script> -->
 </body>
 
 </html>
