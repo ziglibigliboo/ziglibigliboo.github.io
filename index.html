@@ -1698,60 +1698,194 @@ tossed dimsum was great.
     <!-- <link href="burger/css/style.css" rel="stylesheet"> -->
 </head>
 
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 2%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+
 <body>
 
-    <div class="container" id="container">
+    <div class="container" id="container" style="max-height: min-content; overflow-y: hidden;">
 
-        <div class="blog-post" style="background: url('images/background_white.jpg'); background-size: cover;">
-            <div
-                style="height: 120px; width: inherit; background-image: url('/images/red_brush.png'); background-size: calc(12.375rem + 12.5vw); background-position: center; background-repeat: no-repeat;">
-                <!-- <img src="/images/red_brush.png" alt=""
+
+        <div
+            style="height: 120px; width: inherit; background-image: url('/images/red_brush.png'); background-size: calc(12.375rem + 12.5vw); background-position: center; background-repeat: no-repeat;">
+            <!-- <img src="/images/red_brush.png" alt=""
             style="width: inherit; padding-left: 30%; padding-right: 30%; padding-bottom: 0%; position: relative;"> -->
-                <p><br></p>
-                <h1
-                    style="text-align: center; margin-bottom: 0px; color: white; font-family: 'Pacifico', cursive; font-weight: 200;">
-                    Blog
-                </h1>
+            <p><br></p>
+            <h1
+                style="text-align: center; margin-bottom: 0px; color: white; font-family: 'Pacifico', cursive; font-weight: 200;">
+                @wokman.india
+            </h1>
+        </div>
+
+        <style>
+            .column img:hover {
+                opacity: 0.5;
+                -webkit-filter: brightness(50%);
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+
+            .hover-img:hover {
+                /* make image dark */
+                opacity: 0.5;
+                -webkit-filter: brightness(50%);
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+
+            .hover-img p {
+                display: none;
+
+            }
+
+            .hover-img:hover p {
+                display: contents;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        </style>
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <div class="hover-img">
+                    <img src="/images/blog/blog1.jpg" style="width:100%;">
+                    <p>@wokman.india</p>
+                </div>
+                <img src="/images/blog/blog2.jpg" style="width:100%">
+                <img src="/images/blog/blog3.jpg" style="width:100%">
+                <img src="/images/blog/blog4.jpg" style="width:100%">
+
             </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body" style="text-align: center;">
-                            <div class="post-image">
-                                <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="pic"
-                                    style="width: calc(8.375rem + 8.5vw);" />
-                            </div>
-                            <div
-                                style="border: 1px solid rgba(0,0,0,0.125); border-radius: 10%; margin-top: -30px; padding: 20px; padding-top: 40px;">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body" style="text-align: center;">
-                            <div class="post-image">
-                                <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="pic"
-                                    style="width: calc(8.375rem + 8.5vw);" />
-                            </div>
-                            <div
-                                style="border: 1px solid rgba(0,0,0,0.125); border-radius: 10%; margin-top: -30px; padding: 20px; padding-top: 40px;">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="column">
+                <img src="/images/blog/blog5.jpg" style="width:100%">
+                <img src="/images/blog/blog6.jpg" style="width:100%">
+                <img src="/images/blog/blog7.jpg" style="width:100%">
+                <img src="/images/blog/blog10.jpg" style="width:100%">
+
+                <script async src="//www.instagram.com/embed.js"></script>
+                <script async src="//www.instagram.com/embed.js"></script>
+                <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+            <div class="column">
+
+                <img src="/images/blog/blog1.jpg" style="width:100%">
+                <img src="/images/blog/blog1.jpg" style="width:100%">
+                <img src="/images/blog/blog9.jpg" style="width:100%">
+                <img src="/images/blog/blog10.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="/images/about-1.jpg" style="width:100%">
+                <img src="/images/about-1.jpg" style="width:100%">
+                <img src="/images/blog/blog9.jpg" style="width:100%">
+                <img src="/images/blog/blog10.jpg" style="width:100%">
             </div>
         </div>
+
+
+        <!-- <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body" style="text-align: center;">
+                            <div class="post-image">
+                                <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="pic"
+                                    style="width: calc(8.375rem + 8.5vw);" />
+                            </div>
+                            <div
+                                style="border: 1px solid rgba(0,0,0,0.125); border-radius: 10%; margin-top: -30px; padding: 20px; padding-top: 40px;">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body" style="text-align: center;">
+                            <div class="post-image">
+                                <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="pic"
+                                    style="width: calc(8.375rem + 8.5vw);" />
+                            </div>
+                            <div
+                                style="border: 1px solid rgba(0,0,0,0.125); border-radius: 10%; margin-top: -30px; padding: 20px; padding-top: 40px;">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
     </div>
 
     <div class="loading">
@@ -1764,6 +1898,9 @@ tossed dimsum was great.
 
 
     <!-- <script src="js/infinitescroll.js"></script> -->
+
+
+
 </body>
 
 </html>
