@@ -353,9 +353,17 @@
 /*** Team ***/
 .team-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-    height: calc(100% - 38px);
+    height: calc(15rem + 6vw);
     transition: .5s;
 }
+
+@media only screen and (max-width: 600px) {
+    .team-item {
+        box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+        height: calc(12rem + 50vw);
+        transition: .5s;
+    }
+  }
 
 .team-item img {
     transition: .5s;
@@ -366,7 +374,7 @@
 }
 
 .team-item:hover {
-    height: 100%;
+    height: calc(15rem + 6vw);
 }
 
 .team-item .btn {
