@@ -72,8 +72,7 @@
 
                 <a href="#hello" class="nav-item nav-link">Hello!</a>
                 <a href="#presence" class="nav-item nav-link">Presence</a>
-                <a href="" class="nav-item nav-link"><i
-                        class="fa fa-phone-alt text-secoundary me-2"></i> +91
+                <a href="" class="nav-item nav-link"><i class="fa fa-phone-alt text-secoundary me-2"></i> +91
                      9501113925
                 </a>
             </div>
@@ -881,8 +880,26 @@ tossed dimsum was great.
         </h1>
     </div>
 
-    <h1 style="text-align: center">Show Instagram Feed on your Website</h1>
-    <div id="instafeed-container"></div>
+    <style type="text/css">
+        .instafeed a img {
+            width: 25%;
+            margin: 10px;
+            border-radius: 10%;
+        }
+
+        .instafeed a img:hover {
+            filter: brightness(50%);
+            -webkit-filter: brightness(50%);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+    </style>
+
+
+    <div class="instafeed" id="instafeed-container" style="text-align: center"></div>
 
 
 
@@ -891,8 +908,10 @@ tossed dimsum was great.
         var userFeed = new Instafeed({
             get: 'user',
             target: "instafeed-container",
-            resolution: 'low_resolution',
-            accessToken: 'YOUR_INSTAGRAM_ACCESS_TOKEN_GOES_HERE'
+            limit: 9,
+            resolution: 'high_resolution',
+            accessToken: 'IGQVJWSUdsdjh6WlA2NmROTEJGRFc4UGRMcmVkVi1XanFWa0hqeTVZAaVZA4SEtuMndzRHdUamwtTlJJVnZAkSGlBSmxWVDExaFBqYUxtdFRQbXBsUkR3RzdvYzU4eEpFV3UyRzhTbFhEb21IazhxZA2loUAZDZD'
+
         });
         userFeed.run();
     </script>
