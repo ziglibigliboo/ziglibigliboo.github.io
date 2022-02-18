@@ -6,7 +6,8 @@
 }
 
 .ff-secondary {
-    font-family: 'Pacifico', cursive;
+    font-family: 'GlacialIndifference';
+    font-weight: 700 !important;
 }
 
 .fw-medium {
@@ -241,6 +242,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .video .btn-play {
