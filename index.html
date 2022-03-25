@@ -520,7 +520,7 @@ customers to bring out the chef in them.
 
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="padding: 00%;">
 
-            <img src="/images/wokbox_steps.png" alt="" style="width: 70%;">
+            <img src="/images/wokbox_steps.png" alt="" style="width: 80%;">
 
         </div>
     </div>
@@ -555,7 +555,7 @@ customers to bring out the chef in them.
 
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="padding: 00%;">
             <a href="https://wokman.dotpe.in">
-                <img src="/images/our_food.png" alt="" style="width: 80%;">
+                <img src="/images/our_food4.png" alt="" style="width: 80%;">
             </a>
         </div>
     </div>
@@ -1305,10 +1305,183 @@ tossed dimsum was great.
 
 
 <!-- Reservation Start -->
+                                                <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Infinite Scroll | Lazy Load</title>
+    <link rel="stylesheet" href="css/infinitescroll.css">
+
+    <!-- For Blog CSS -->
+    <!-- CSS Libraries -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="burger/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="burger/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="burger/lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="burger/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <!-- <link href="burger/css/style.css" rel="stylesheet"> -->
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+
+    }
+
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 2%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
 
 
-                                                <!-- Footer Start -->
-                                                <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+<body>
+
+    <div class="container-xxl" id="container"
+        style="max-height: min-content; overflow-y: hidden; background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)), url('images/background_black.jpg'); background-size: cover; padding-bottom: 50px;">
+
+
+        <div
+            style="height: 120px; width: inherit; background-image: url('/images/red_brush.png'); background-size: calc(12.375rem + 12.5vw); background-position: center; background-repeat: no-repeat;">
+            <!-- <img src="/images/red_brush.png" alt=""
+            style="width: inherit; padding-left: 30%; padding-right: 30%; padding-bottom: 0%; position: relative;"> -->
+            <p><br></p>
+            <h2 class="brush_heading" style="text-align: center; margin-bottom: 0px;">
+                Under The Umbrella Of
+            </h2>
+        </div>
+
+        <style>
+            .infinitescroll img {
+                border-radius: 50%;
+                margin: 10px;
+                width: 80% !important;
+            }
+
+            .column img:hover {
+                filter: brightness(50%);
+                -webkit-filter: brightness(50%);
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+
+            .hover-img:hover {
+                /* make image dark */
+                filter: brightness(50%);
+                -webkit-filter: brightness(50%);
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+
+            .hover-img p {
+                display: none;
+
+            }
+
+            .hover-img:hover p {
+                display: contents;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        </style>
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column infinitescroll">
+
+                <a href="">
+                    <img src="/images/under_the_umbrella4.png" style="width:80%">
+                </a>
+
+            </div>
+            <div class="column infinitescroll">
+                <a href="https://www.iconhotels.asia/dastaan">
+                    <img src="/images/under_the_umbrella1.png" style="width:80%">
+                </a>
+            </div>
+            <div class="column infinitescroll">
+                <a href="https://www.iconhotels.asia/dining-1">
+                    <img src="/images/under_the_umbrella2.png" style="width:80%">
+                </a>
+
+            </div>
+            <div class="column infinitescroll">
+                <a href="">
+                    <img src="/images/under_the_umbrella3.png" style="width:80%">
+                </a>
+
+            </div>
+        </div>
+
+
+
+
+</body>
+
+</html>
+
+                                                    <!-- Footer Start -->
+                                                    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
 
     <div class="container">
         <div class="copyright">
