@@ -76,17 +76,69 @@
                      9501113925
                 </a>
             </div>
-            <a href="/try_white" class="btn btn-primary py-2 px-4"> Order Now
+            <a href="https://wokman.dotpe.in" class="btn btn-primary py-2 px-4"> Order Now
             </a>
         </div>
     </nav>
 
     <div class="container-xxl py-5 bg-dark hero-header"
         style="background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('images/background_black.jpg'); background-repeat: no-repeat; background-size: cover;">
-        <div class="container my-5 py-5">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="display-3 text-white animated slideInLeft">
+        
+<style>
+    #myVideo {
+  
+  right: 0;
+  bottom: 0;
+  width: inherit;
+}
+.header-text{
+    max-width: 100% !important;
+    position: absolute;
+    top: 25vw;
+}
+
+.bg-overlay {
+  display: block;
+  position: absolute;
+  top: 2vw;
+  left: 0;
+  width: 100%;
+  height: 70vw;
+  content: ' ';
+  backface-visibility: hidden;
+  background: #000000;
+  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75));
+  opacity: 0.8;
+}
+
+/* media only screen for mobile */
+@media only screen and (max-width: 600px){
+    .bg-overlay {
+        top: 30vw;
+    }
+}
+
+/* for laptops only  */
+@media only screen and (min-width: 1020px){
+    #myVideo {
+        margin-top: 70px;
+    }
+}
+</style>
+<div class="bg-overlay">
+</div>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="/video/header_video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        
+</div>            <div class="container-xxl py-5 bg-dark hero-header"
+style="background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('images/background_black.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="header-text container my-5 py-5">
+            <div class="row align-items-center g-5" style="text-align: center;">
+                
+                    <h1 class="display-3 text-white animated slideInLeft" style="z-index: 5;">
                         Let&#39;s WOK
                     </h1>
                     <p class="text-white animated slideInLeft mb-4 pb-2">
@@ -94,15 +146,11 @@
                     </p>
                     <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A
                         Table</a> -->
-                </div>
-                <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                
+                
                     <!-- <img class="img-fluid" src="/images/header.png" alt="" style="animation: none !important;"> -->
-                    <video class="img-fluid" autoplay="autoplay" controls muted loop="true">
-                        <source src="/video/header_video.mp4" type="video/mp4">
-
-
-                    </video>
-                </div>
+          
+                
             </div>
         </div>
     </div>
