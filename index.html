@@ -128,7 +128,7 @@
 <div class="bg-overlay">
 </div>
 
-        <video autoplay muted loop id="myVideo">
+        <video class="lazy" autoplay muted loop id="myVideo">
             <source src="/video/header_video.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
@@ -141,7 +141,18 @@ style="background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(
                     <h1 class="display-3 text-white animated slideInLeft" style="z-index: 5;">
                         Let&#39;s WOK
                     </h1>
-                    <p class="text-white animated slideInLeft mb-4 pb-2">
+                    <style>
+                        .header-hashtags{
+                            font-size: larger;
+                        }
+                        /* media only screen for mobile */
+                        @media only screen and (min-width: 1020px){
+    .header-hashtags{
+                            font-size: xx-large;
+                        }
+}
+                    </style>
+                    <p class="header-hashtags text-white animated slideInLeft mb-4 pb-2" style="color: #de412f !important;">
                         #fresh #healthy #customised
                     </p>
                     <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A
@@ -893,7 +904,7 @@ tossed dimsum was great.
 
             </div>
             <div class="column infinitescroll">
-                <img src="/images/blog/blog21.JPG" style="width:100%">
+                <img src="/images/blog/blog21.jpg" style="width:100%">
                 <img src="/images/blog/blog8.JPG" style="width:100%">
             </div>
             <div class="column infinitescroll">
